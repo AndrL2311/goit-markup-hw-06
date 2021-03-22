@@ -228,11 +228,20 @@ body {
 
   margin-bottom: 30px;
 }
-.form-field-policy input[type='checkbox'] {
+
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  position: absolute;
+}
+
+/* .form-field-policy input[type='checkbox'] {
   width: 16px;
   height: 16px;
   margin-right: 8px;
-}
+} */
 
 .form-field-policy label {
   margin-right: 8px;
