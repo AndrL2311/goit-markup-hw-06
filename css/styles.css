@@ -136,7 +136,7 @@ body {
   margin-bottom: 10px;
 }
 
-.form-field input {
+.form-input {
   width: 100%;
   margin: 0;
   padding: 12px 12px 12px 42px;
@@ -145,7 +145,11 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  outline: none;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .input-icon {
   position: relative;
 }
@@ -154,6 +158,15 @@ body {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus + .modal-icon {
+  fill: var(--accent-color);
+}
+
+.form-input:focus {
+  border-color: var(--accent-color);
 }
 
 .form-field label {
@@ -195,9 +208,15 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.form-field-coment textarea:focus {
+  border-color: var(--accent-color);
+}
+
 .form-field-coment textarea::placeholder {
-  font-weight: normal;
   font-size: 12px;
   line-height: 1.67;
   letter-spacing: 0.01em;
