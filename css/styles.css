@@ -112,17 +112,7 @@ body {
 .button-modal-close:hover .modal-icon-close{
   fill: var(--accent-color);
 }
-/* .button-modal-close:before {
-  content: '+';
-  color: var(--color2);
-  position: absolute;
-  
-  font-size: 30px;
-  line-height: 1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-} */
+
 
 /* Форма модального окна */
 .title-modal-form {
@@ -244,7 +234,7 @@ body {
 }
 
 .checkbox {
-
+/* Скрываем чекбокс */
   /* -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -252,6 +242,10 @@ body {
   position: absolute; */
 
   position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+
   width: 1px;
   height: 1px;
   margin: -1px;
