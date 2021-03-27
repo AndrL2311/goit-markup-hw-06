@@ -88,7 +88,7 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  z-index: 5;
+  background-color: var(--color1);
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 
@@ -951,8 +951,11 @@ body {
   color: var(--color1);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   border-radius: 4px;
   cursor: pointer;
+  border-color: transparent;
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1077,7 +1080,7 @@ body {
   background: rgba(33, 150, 243, 0.9);
   /* opacity: 0; */
 
-  transform: translateY(100%);
+  transform: translateY(100.5%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
